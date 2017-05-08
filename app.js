@@ -1,4 +1,4 @@
-var app = angular.module('lab18Module',['ngRoute']);
+var app = angular.module('lab18Module',['as.sortable','ngRoute']);
 
 // routes for navigtion
 

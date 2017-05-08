@@ -1,5 +1,9 @@
 <button type="button" ng-click="drawCards()">Draw Cards</button>
-<div ng-repeat="card in arrayOfCards track by $index">
+
+<ul data-as-sortable="board.dragControlListeners" data-ng-model="arrayOfCards">
+<li ng-repeat="card in arrayOfCards track by $index" data-as-sortable-item>
+	<div data-as-sortable-item-handle>
 	<img ng-src="{{card}}"/>
-</div> 
+	</div>
+</li> 
 

@@ -8,9 +8,7 @@ app.factory('deckOfCards', function($http) {
 			url: "https://deckofcardsapi.com/api/deck/new/draw/?count=2"
 		}).then(function successfulCallback(response) {
 			finalData = response.data.cards[0].image;
-			arrayOfCards.push(finalData);
 			console.log(response);
-			console.log(arrayOfCards);
 		}, function errorCallback(error) {
 			console.log(error);
 		});

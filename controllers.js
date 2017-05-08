@@ -23,6 +23,9 @@
 		$scope.arrayOfCards.push(deckOfCards.returnCards());
 		}
 
+
+		
+
 	});
 
 
