@@ -16,7 +16,7 @@
 	});
 
 	//controller for map view
-	
+
 	app.controller('cardController', function($scope, deckOfCards) {
 		$scope.cardNum = 0;
 		$scope.arrayOfCards = [];
@@ -35,12 +35,12 @@
 			}
 		})
 
-	    .directive("background", function () {
-			
+	    .directive("drawCard", function () {
+
 				return {
 					restrict: 'E',
 					replace: false,
-					template: "<img src='bg.jpg'>"
+					template: '<button type="button" id="draw" ng-click="drawCards()">Draw Cards</button>'
 				}
 })
 

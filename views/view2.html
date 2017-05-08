@@ -1,11 +1,16 @@
-<button type="button" ng-click="drawCards()">Draw Cards</button>
+<div id="total">
+
+<div id="count">
+<draw-card></draw-card>
+<counter></counter>
+</div>
 
 <ul data-as-sortable="board.dragControlListeners" data-ng-model="arrayOfCards">
 <li ng-repeat="card in arrayOfCards track by $index" data-as-sortable-item>
 	<div data-as-sortable-item-handle>
-	<img ng-src="{{card}}"/>
+	<img id="card" ng-src="{{card}}"/>
 	</div>
-</li> 
-<counter></counter>
-<background></background>
+</li>
 
+
+<div>

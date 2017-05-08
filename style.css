@@ -1,5 +1,7 @@
-body {
+body, html {
   text-align: center;
+  height: 100%;
+  background-color: black;
 }
 
 nav {
@@ -10,10 +12,12 @@ nav {
 a {
   padding: 0 10px;
   text-decoration: none;
+  color: white;
 }
 
 a:hover {
   text-decoration:underline;
+  color: darkgray;
 }
 
 /* View 1  Styling   */
@@ -24,18 +28,19 @@ a:hover {
   text-align: center;
 }
 
-p {
+#fizz {
   font-size: 240%;
   width: 300px;
   height: 200px;
-  border: 2px solid orange;
+  border: 4px solid dodgerblue;
   margin: 0 auto;
   margin-top: 40px;
-  /*background-image: url(images/bubbles.png);*/
+  padding-top: 100px;
+  background-image: url(images/bubbles.jpg);
   }
 
 .yellow {
-  color: yellow;
+  color: yellowgreen;
 }
 
 .blue {
@@ -44,4 +49,55 @@ p {
 
 .red {
   color: red;
+}
+
+/* Styling for View 2   */
+
+#total {
+  width: 70%;
+  background-image: url(images/bg.jpg);
+  height: 540px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  border: 4px solid red;
+}
+
+#count{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 85px;
+}
+
+#draw {
+  height: 40px;
+  padding: 0px 10px;
+  background-color: black;
+  color: white;
+  border: 2px solid red;
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
+}
+
+#card {
+  display: inline-block;
+  float: left;
+  width: 80px;
+  padding: 10px;
+}
+
+#counter {
+  font-size: 120%;
+  background-color: white;
+  width: 45px;
+  height: 29px;
+  padding-top: 8px;
+  color: red;
+  border: 2px solid red;
+  display: inline-block;
+  margin-top: 8px;
+  position: relative;
+  top: 2px;
 }
