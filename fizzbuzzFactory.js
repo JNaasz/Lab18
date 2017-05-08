@@ -5,11 +5,11 @@ app.factory('fizzbuzzFactory',function() {
 
 	 var getOutput = function(fizzbuzzNumber) {
 			if (fizzbuzzNumber % 3 === 0 && fizzbuzzNumber % 5 === 0) {
-				newObj = {answer:"FizzBuzz"};
+				newObj = {answer:"FizzBuzz", cls: "blue"};
 			} else if (fizzbuzzNumber % 3 === 0) {
-				newObj = {answer:"Fizz"};
+				newObj = {answer:"Fizz", cls: "red"};
 			} else if (fizzbuzzNumber % 5 === 0) {
-				newObj = {answer:"Buzz"};
+				newObj = {answer:"Buzz", cls:"yellow"};
 			} else {
 				newObj = {answer:"neither fizz nor buzz"};
 			}
@@ -17,12 +17,9 @@ app.factory('fizzbuzzFactory',function() {
 		}
 
        var giveOutput = function() {
-       	return newObj; 
+       	return newObj;
        };
 
        return {getOutput: getOutput,
        		  giveOutput: giveOutput}
 	});
-
-
-

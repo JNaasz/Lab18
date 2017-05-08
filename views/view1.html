@@ -1,9 +1,8 @@
 
-<div >
+<div id="v1">
 <form>
 <input type="number" ng-model="number" placeholder="enter number">
 <button type="button" ng-click="submit(number)">go!</button>
 </form>
-<p>{{fizzbuzzOutput.answer}}</p>
+<p ng-class="fizzbuzzOutput.cls">{{fizzbuzzOutput.answer}}</p>
 </div>
-
