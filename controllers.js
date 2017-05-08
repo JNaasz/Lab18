@@ -16,17 +16,33 @@
 	});
 
 	//controller for map view
+	
 	app.controller('cardController', function($scope, deckOfCards) {
+		$scope.cardNum = 0;
 		$scope.arrayOfCards = [];
 		$scope.drawCards = function () {
 			deckOfCards.newDeckOfCards();
-		$scope.arrayOfCards.push(deckOfCards.returnCards());
-		}
+			$scope.arrayOfCards.push(deckOfCards.returnCards());
+			$scope.cardNum++;
+		}})
 
 
-		
+		.directive("counter", function () {
+			return {
+				restrict: 'E',
+				replace: false,
+				template: "<p id='counter'>{{cardNum}}</p>"
+			}
+		})
 
-	});
+	    .directive("background", function () {
+			
+				return {
+					restrict: 'E',
+					replace: false,
+					template: "<img src='bg.jpg'>"
+				}
+})
 
 
 
