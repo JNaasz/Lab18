@@ -11,7 +11,7 @@ app.factory('fizzbuzzFactory',function() {
 			} else if (fizzbuzzNumber % 5 === 0) {
 				newObj = {answer:"Buzz", cls:"yellow"};
 			} else {
-				newObj = {answer:"neither fizz nor buzz"};
+				newObj = {answer:"Neither fizz nor buzz"};
 			}
 
 		}

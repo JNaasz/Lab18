@@ -15,15 +15,15 @@
 		};
 	});
 
-	//controller for map view
+	//controller for cards view
 
 	app.controller('cardController', function($scope, deckOfCards) {
 		$scope.cardNum = 0;
 		$scope.arrayOfCards = [];
 		$scope.drawCards = function () {
-			deckOfCards.newDeckOfCards();
-			$scope.arrayOfCards.push(deckOfCards.returnCards());
+			$scope.arrayOfCards.push(deckOfCards.newDeckOfCards());
 			$scope.cardNum++;
+			console.log($scope.arrayOfCards);
 		}})
 
 
